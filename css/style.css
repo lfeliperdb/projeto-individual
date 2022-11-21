@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.mobile {
+    background-color: #2980B9;
+    display: none;
+}
+.desktop {
+    display: block;
+}
+
+.navbar button {
+    background-color: white!important;
+}
+
+nav {
+    background-color: #2980B9;
+}
+
+header form {
+    position: relative;
+}
+
+input {
+    color: #2980B9!important;
+}
+
+header input {
+    padding: 10px 50px 10px 20px!important;
+}
+
+input::placeholder {
+    color: #2980B9!important;
+}
+
+.search {
+    cursor: pointer;
+    width: 24px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo {
+    width: 200px;
+}
+
+header ul {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0!important;
+    margin: 0 50px 0!important;
+}
+
+ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-decoration: none;
+    color: white;
+    transition: .1s;
+}
+
+header ul li a:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+main .welcome {
+    padding: 50px 100px;
+    width: 100%;
+    height: auto;
+}
+
+main .welcome img {
+    width: 100%;
+    height: auto;
+}
+
+main .info {
+    width: 100%;
+    padding: 30px 150px;
+    background: #d9d9d9;
+    gap: 50px;
+}
+
+main .info img {
+    width: 100%;
+}
+
+.destaques {
+    padding: 50px 100px;
+}
+
+.destaques a {
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+}
+
+.destaques a:hover {
+    color: black;
+    transform: scale(1.02);
+}
+
+main h1 {
+    color: #2980B9;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.destaques .card {
+    border: none!important;
+    border-radius: 10px!important;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.destaques .card img {
+    border-radius: 10px 10px 0 0;
+}
+
+p.price {
+    color: #2980B9;
+    font-weight: bold;
+}
+
+.imports {
+    margin: 50px 0;
+}
+
+.send-email {
+    background-color: #2980B9;
+    margin: 0;
+    padding: 70px 350px;
+    color: white;
+}
+
+.send-email h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+main form {
+    position: relative;
+}
+
+.arrow {
+    cursor: pointer;
+    width: 24px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer {
+    padding: 50px 100px;
+    color: #2980B9;
+}
+
+footer .foot {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+footer ul {
+    padding: 0!important;
+    margin: 0!important:
+}
+
+footer ul li a {
+    color: #2980B9;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #2980B9;
+    text-decoration: underline;
+}
+
+
+
+@media(max-width: 1000px) {
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+
+    main .welcome {
+        padding: 50px;
+    }
+
+    main .info {
+        padding: 30px 50px;
+    }
+
+    .destaques {
+        padding: 50px;
+    }
+
+    .send-email {
+        padding: 50px 150px;
+    }
+
+    .send-email h2 {
+        font-size: 2em;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+
+    footer .foot {
+        align-items: center;
+    }
+}
+
+@media(max-width: 728px) {
+    main .welcome {
+        padding: 20px;
+    }
+
+    main .info {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .destaques {
+        padding: 20px;
+    }
+
+    .send-email {
+        padding: 50px 20px;
+    }
+
+    footer { 
+        padding: 20px;
+    }
+
+    footer .foot {
+        width: 100%;
+    }
+}
